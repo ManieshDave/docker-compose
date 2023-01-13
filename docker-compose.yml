@@ -1,0 +1,8 @@
+version: "3"
+services:
+ soft:
+  image: 'tomcat:9'
+  ports:
+  - "90:8080"
+  volumes:
+  - "/apla-project/git/game-of-life/gameoflife-web/target:/usr/local/tomcat/webapps"
